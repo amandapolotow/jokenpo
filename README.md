@@ -14,7 +14,7 @@ given two players, create a judge that could decide who won based on their choic
 <p>Source: http://dojopuzzles.com/problemas/exibe/jokenpo/ </p>
 <p>The problem was solved by dynamically creating an object based on the player's choice and calling a property on this object based on the computers choice. 
 Depending on the combination, this would return 'true' or 'false', saying if the player won or lost the match. 
-Example: if the player choses 'rock', it will instatiate an object of the 'Rock' class. This object will have two properties: 'scissors = true' and 'paper=false'.
+Example: if the player chooses 'rock', it will instatiate an object of the 'Rock' class. This object will have two properties: 'scissors = true' and 'paper=false'.
 If the computer chooses 'scissors', it will return 'true', according to the properties of the object, which means the player won.
 
 <h3>Instructions</h3>
