@@ -15,14 +15,15 @@ class Input {
         });
 
         return new Promise((resolve,reject) => {
-            rl.question('Choose \'rock\', \'paper\' or \'scissors\': ', (answer) => { 
-                const playerChoice = answer.toLowerCase();
+            rl.question('Choose \'rock\', \'paper\' or \'scissors\': ', (playerChoice) => { 
                 if (validation.validatePlayerEntry(playerChoice, this.optionsArray)) { 
                     rl.close();                                
                 } else {
                     console.log("Invalid option!");
+
                     return process.exit();
                 }
+
                 resolve(playerChoice);
             });
         });
@@ -30,7 +31,7 @@ class Input {
 
     getComputerChoice() {
         return new Promise((resolve, reject) => {
-            const computerChoice = this.optionsArray[Random.getRandomNumber(0,2)];
+            const computerChoice = this.optionsArray[Random.getRandomNumber(0,(this.optionsArray.length) - 1)];
             resolve(computerChoice);
         })
     }
