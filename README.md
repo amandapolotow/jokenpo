@@ -15,18 +15,22 @@ given two players, create a judge that could decide who won based on their choic
 <p>The problem was solved by dynamically creating an object based on the player's choice and calling a property on this object based on the computers choice. 
 Depending on the combination, this would return 'true' or 'false', saying if the player won or lost the match. 
 Example: if the player chooses 'rock', it will instatiate an object of the 'Rock' class. This object will have two properties: 'scissors = true' and 'paper=false'.
-If the computer chooses 'scissors', it will return 'true', according to the properties of the object, which means the player won.
+If the computer chooses 'scissors', it will return 'true', according to the properties of the object, which means the player won.</p>
+<p>This game uses Jest to run tests: https://jestjs.io/ </p>
 
 <h3>Instructions</h3>
 <p>To run this game, you'll need to have Node installed on your machine</p>
 <ul>
   <li>Download or clone this repository</li>
   <li>Open a command line tool and acess the project's folder (where you can see 'src' folder and 'package.json' file)</li>
+  <li>Run 'npm install' or 'yarn' (if you have yarn installed) to install dependencies</li>
   <li>Run 'node src/index.js'</li>
-  <li>You can also run using 'npm run start' or 'yarn start' (if you have yarn installed)</li>
+  <li>You can also run using 'npm run start' or 'yarn start'</li>
   <li>You will see the game start on your command line tool</li>
   <li>Have fun!</li>
 </ul>
+<p>To run tests, run 'npm run test' or 'yarn test'</p>
+
 
 
 
